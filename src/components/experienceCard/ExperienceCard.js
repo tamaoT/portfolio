@@ -7,6 +7,10 @@ export default function ExperienceCard({cardInfo, isDark}) {
   const imgRef = createRef();
 
   function getColorArrays() {
+    // カスタムカラーが指定されている場合は自動抽出をスキップ
+    if (cardInfo.color) {
+      return;
+    }
     const colorThief = new ColorThief();
     setColorArrays(colorThief.getColor(imgRef.current));
   }
@@ -30,9 +34,12 @@ export default function ExperienceCard({cardInfo, isDark}) {
       : null;
   };
 
+  // カスタムカラーが指定されている場合はそれを使用、なければColorThiefの結果を使用
+  const backgroundColor = cardInfo.color ? cardInfo.color : rgb(colorArrays);
+
   return (
     <div className={isDark ? "experience-card-dark" : "experience-card"}>
-      <div style={{background: rgb(colorArrays)}} className="experience-banner">
+      <div style={{background: backgroundColor}} className="experience-banner">
         <div className="experience-blurred_div"></div>
         <div className="experience-div-company">
           <h5 className="experience-text-company">{cardInfo.company}</h5>

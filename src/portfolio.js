@@ -23,7 +23,7 @@ const greeting = {
   username: "Tamao Takahashi",
   title: "Hi all, I'm Tamao",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks."
+    "A passionate Computer Architecture Researcher 🎀 having an experience of building high-fidelity system simulations with gem5 / C++ / Python and exploring next-generation memory technologies like SOT-MRAM."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,13 +33,13 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/tamaoT",
+  linkedin: "https://www.linkedin.com/in/tamao-takahashi-24b298291/",
+  gmail: "s2310594@u.tsukuba.ac.jp",
+  //gitlab: "https://gitlab.com/saadpasta",
+  //facebook: "https://www.facebook.com/saad.pasta7",
+  //medium: "https://medium.com/@saadpasta",
+  //stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +49,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "DEEP TECH RESEARCHER EXPLORING THE FRONTIERS OF MEMORY SYSTEMS",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "Developing high-fidelity system simulations using gem5 and C++"
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("Modeling and evaluating emerging non-volatile memory technologies (e.g., SOT-MRAM)"),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "Performance analysis and workload characterization for future computing architectures"
     )
   ],
 
@@ -65,57 +65,25 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
+      skillName: "C++",
+      fontAwesomeClassname: "fab fa-cuttlefish"
+    },
+    {
       skillName: "html-5",
       fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
     },
     {
       skillName: "JavaScript",
       fontAwesomeClassname: "fab fa-js"
     },
     {
-      skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
-    },
-    {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
-    },
-    {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
-    },
-    {
       skillName: "npm",
       fontAwesomeClassname: "fab fa-npm"
-    },
-    {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
-    },
-    {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
     },
     {
       skillName: "python",
       fontAwesomeClassname: "fab fa-python"
     },
-    {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -128,10 +96,16 @@ const educationInfo = {
     {
       schoolName: "University of Tsukuba",
       logo: require("./assets/images/Tsukubalogo.png"),
-      subHeader: "Bachelor of Science in Computer Science",
-      duration: "September 2013 - April 2017",
-      desc: "Ranked top 10% in the program. Took courses about Software Engineering, Web Security, Operating Systems, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      subHeader: "College of Comparative Culture →　College of Software and Computing Science",
+      duration: "April 2023 - ",
+      desc: "I studied literature, language, and the arts in the School of Comparative Culture here, a top national university in Japan ranked 9th in the Times Higher Education Japan University Rankings. After taking a course in Digital Humanities, I discovered a strong interest in the intersection of culture and technology, which led me to change my academic path to Computer Science.",
+    },
+    {
+      schoolName: "Université Grenoble Alpes",
+      logo: require("./assets/images/UGA.png"),
+      subHeader: "Computer science, mathematics and applied mathematics",
+      duration: "September 2024 - July 2025 (exchange)",
+      desc: "courses on the basics of C++, visual computing, languages, and internships.",
     }
   ]
 };
@@ -142,15 +116,15 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Data Analysis", //Insert stack or technology you have experience in
+      progressPercentage: "50%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
-      progressPercentage: "70%"
+      Stack: "HTML/CSS/JavaScript",
+      progressPercentage: "10%"
     },
     {
-      Stack: "Programming",
+      Stack: "Computer Architecture",
       progressPercentage: "60%"
     }
   ],
@@ -163,29 +137,28 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      role: "Research Assistant",
+      company: "RIKEN (Supercomputing Performance Research Team)",
+      companylogo: require("./assets/images/riken.png"),
+      date: "August 2025 – September 2025",
+      desc: "Worked on next-generation memory systems research",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+        "Simulated and evaluated computer architectures using SOT-MRAM",
+        "Conducted performance analysis of next-generation memory systems"
+      ],
+      color: "#ffb7c5" // さくらピンク
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Research Assistant",
+      company: "Spintec, CEA (Grenoble, France)",
+      companylogo: require("./assets/images/CEA.png"),
+      date: "April 2025 – July 2025",
+      desc: "Research on SOT-MRAM devices at cryogenic temperatures",
+      descBullets: [
+        "Explored and characterized SOT-MRAM devices at cryogenic temperatures",
+        "Conducted experiments to observe and analyze diverse device behaviors"
+      ],
+      color: "#ffc4d6" // 明るいピンク
     }
   ]
 };
@@ -199,7 +172,7 @@ const openSource = {
 };
 
 // Some big projects you have worked on
-
+/*
 const bigProjects = {
   title: "Big Projects",
   subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
@@ -230,6 +203,7 @@ const bigProjects = {
   ],
   display: true // Set false to hide this section, defaults to true
 };
+*/
 
 // Achievement Section
 // Include certificates, talks etc
@@ -375,7 +349,7 @@ export {
   techStack,
   workExperiences,
   openSource,
-  bigProjects,
+  //bigProjects,
   achievementSection,
   blogSection,
   talkSection,

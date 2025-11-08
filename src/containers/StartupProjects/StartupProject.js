@@ -1,10 +1,14 @@
 import React, {useContext} from "react";
 import "./StartupProjects.scss";
-import {bigProjects} from "../../portfolio";
+//import {bigProjects} from "../../portfolio";
 import {Fade} from "react-reveal";
 import StyleContext from "../../contexts/StyleContext";
 
 export default function StartupProject() {
+  // bigProjects section is disabled
+  return null;
+  
+  /* Commented out - bigProjects functionality
   function openUrlInNewTab(url) {
     if (!url) {
       return;
@@ -14,6 +18,7 @@ export default function StartupProject() {
   }
 
   const {isDark} = useContext(StyleContext);
+  
   if (!bigProjects.display) {
     return null;
   }
@@ -29,7 +34,7 @@ export default function StartupProject() {
                 : "subTitle project-subtitle"
             }
           >
-            {bigProjects.subtitle}
+          "//": "{bigProjects.subtitle}"
           </p>
 
           <div className="projects-container">
@@ -91,4 +96,5 @@ export default function StartupProject() {
       </div>
     </Fade>
   );
+  */
 }
